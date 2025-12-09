@@ -1,75 +1,126 @@
-<!-- index.html -->
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marvin-Bruce Adjei — Portfolio</title>
+  <title>Marvin‑Bruce Adjei — Portfolio</title>
+  <meta name="description" content="Portfolio of Marvin‑Bruce Adjei — aspiring computer scientist, networking enthusiast and future AI engineer. Projects, skills and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <img src="profile.jpg" alt="Profile Photo" class="profile-img" />
-      <h1>Marvin‑Bruce Adjei</h1>
-      <p>Aspiring Computer Scientist • Networking Enthusiast • Future AI Engineer</p>
-      <a href="#contact" class="btn">Hire Me</a>
-    </div>
-  </header>
+  <div class="wrap">
+    <header class="hero" role="banner" aria-label="Hero header">
+      <img src="profile.jpg" alt="Marvin Bruce Adjei — profile photo" class="profile-img" />
+      <div class="hero-content">
+        <div style="display:flex;gap:8px;align-items:center">
+          <h1>Marvin‑Bruce Adjei</h1>
+          <span class="badge">Aspiring CS • AI • Networks</span>
+        </div>
+        <p>I'm an ambitious Computer Science aspirant from Ghana — I love networking, AI systems, cybersecurity, and building practical tech solutions.</p>
 
-  <section class="about section" id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm an ambitious Computer Science aspirant from Ghana with deep interest in networking, AI systems, 
-      Cybersecurity, and building real-world technological solutions. I'm currently preparing for university, 
-      studying CS foundations, and building projects as I plan toward university and a tech career.
-    </p>
-  </section>
-
-  <section class="skills section" id="skills">
-    <h2>Skills & Certifications</h2>
-    <ul>
-      <li>HTML & CSS Basics</li>
-      <li>Fundamental Networking (Cisco/CompTIA Level)</li>
-      <li>Linux • Termux • Command Line</li>
-      <li>Python (Beginner)</li>
-      <li>Cybersecurity Fundamentals</li>
-    </ul>
-  </section>
-
-  <section class="projects section" id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>AI Agent on Termux</h3>
-        <p>Built a lightweight local AI assistant using Python and LLaMA models for on-device coding and automation.</p>
+        <div class="cta-row" aria-hidden="false">
+          <a class="btn" href="#contact">Hire Me</a>
+          <a class="btn ghost" href="#projects">View Projects</a>
+          <div class="muted-sm" style="margin-left:8px">Phone: <span class="mono">0200039628</span></div>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Startup Concepts</h3>
-        <p>Designed future product ideas including sanitation robots, electrolysis cooking units, and skill‑matching apps.</p>
+
+      <nav class="toplinks" aria-label="Top links">
+        <a class="socials" href="https://github.com/adjeimarvinbruce-jpg" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="display:block"><path fill="currentColor" d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.7 3.1 8.7 7.4 10.1.5.1.7-.2.7-.5v-1.8c-3 .6-3.7-1.4-3.7-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.7.7 1.7 1 .1 1.9-.7 2.3-1 .1-.8.4-1.5.8-1.8-2.4-.3-5-1.2-5-5.4 0-1.2.4-2.3 1.1-3.2-.1-.3-.5-1.7.1-3.4 0 0 .9-.3 3.2 1.2.9-.2 1.9-.3 2.9-.3s2 .1 2.9.3c2.3-1.5 3.2-1.2 3.2-1.2.6 1.7.2 3.1.1 3.4.7.9 1.1 2 1.1 3.2 0 4.2-2.6 5.1-5 5.4.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.5 4.3-1.4 7.4-5.4 7.4-10.1C23.1 5.3 18.3.5 12 .5z"/></svg>
+        </a>
+        <a class="socials" href="mailto:adjeimarvinbruce@gmail.com" aria-label="Email">✉️</a>
+      </nav>
+    </header>
+
+    <main class="section" role="main">
+      <div>
+        <section class="about" id="about" aria-labelledby="about-heading">
+          <h2 id="about-heading">About Me</h2>
+          <p>
+            I'm currently preparing for university while building projects and learning core Computer Science foundations.
+            My main interests are networking, AI engineering, and cybersecurity — I enjoy practical projects that solve real problems.
+          </p>
+          <div class="divider"></div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+            <a class="btn" href="#projects">See my work</a>
+            <span class="muted-sm">Open to internships • Collaborative projects • Mentorship</span>
+          </div>
+        </section>
+
+        <section class="skills" id="skills" aria-labelledby="skills-heading" style="margin-top:18px">
+          <h2 id="skills-heading">Skills & Certifications</h2>
+          <ul aria-hidden="false">
+            <li>HTML & CSS Basics</li>
+            <li>Fundamental Networking (Cisco/CompTIA)</li>
+            <li>Linux • Termux • Command Line</li>
+            <li>Python (Beginner)</li>
+            <li>Cybersecurity Fundamentals</li>
+          </ul>
+        </section>
+
+        <section class="projects" id="projects" aria-labelledby="projects-heading" style="margin-top:18px">
+          <h2 id="projects-heading">Projects</h2>
+          <div class="project-grid" role="list">
+            <article class="project-card" role="listitem" aria-labelledby="p1">
+              <h3 id="p1">AI Agent on Termux</h3>
+              <p>Built a lightweight local AI assistant using Python and LLaMA models for on-device coding and automation. Focused on privacy-first, offline workflows.</p>
+            </article>
+
+            <article class="project-card" role="listitem" aria-labelledby="p2">
+              <h3 id="p2">Startup Concepts</h3>
+              <p>Designed product concepts: sanitation robots, electrolysis cooking units, and skill‑matching apps to connect local talent with opportunities.</p>
+            </article>
+
+            <article class="project-card" role="listitem" aria-labelledby="p3">
+              <h3 id="p3">Networking Lab</h3>
+              <p>Home lab experiments with routing, VLANs and network security basics using open-source tools and simulated labs.</p>
+            </article>
+
+            <article class="project-card" role="listitem" aria-labelledby="p4">
+              <h3 id="p4">Automation Scripts</h3>
+              <p>Small Python and shell utilities that speed up repetitive tasks on Termux and Linux — useful for prototyping and learning.</p>
+            </article>
+          </div>
+        </section>
       </div>
-    </div>
-  </section>
 
-  <section class="contact section" id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:adjeimarvinbruce@gmail.com">adjeimarvinbruce@gmail.com</a></p>
-    <p>Phone: 0200039628</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-  </section>
+      <aside class="side" aria-label="Sidebar">
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact Me</h2>
+          <p class="muted-sm">Email: <a href="mailto:adjeimarvinbruce@gmail.com">adjeimarvinbruce@gmail.com</a></p>
+          <p class="muted-sm">Phone: <span class="mono">0200039628</span></p>
 
-  <footer>
-    <p>© 2025 Marvin‑Bruce Adjei. All Rights Reserved.</p>
-  </footer>
+          <form class="contact-form" id="contact-form" novalidate>
+            <input id="name" name="name" type="text" placeholder="Your Name" required aria-required="true" />
+            <input id="email" name="email" type="email" placeholder="Email" required aria-required="true" />
+            <textarea id="message" name="message" placeholder="Message" rows="5" required aria-required="true"></textarea>
+            <button type="submit" class="btn">Send</button>
+            <div id="form-status" class="muted-sm" style="margin-top:8px;display:none"></div>
+          </form>
+
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+            <a class="socials" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="socials" href="https://github.com/adjeimarvinbruce-jpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </section>
+
+        <section style="background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:14px;border-radius:12px;color:var(--muted)">
+          <h3 style="margin-top:0">Quick Stats</h3>
+          <p style="margin:6px 0"><strong>Learning:</strong> Data structures, algorithms, and Python projects</p>
+          <p style="margin:6px 0"><strong>Tools:</strong> Linux, Termux, Packet Tracer</p>
+          <p style="margin:6px 0"><strong>Goal:</strong> University & career in AI/Networking</p>
+        </section>
+      </aside>
+    </main>
+
+    <footer role="contentinfo">
+      <p>© 2025 Marvin‑Bruce Adjei. All Rights Reserved.</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
